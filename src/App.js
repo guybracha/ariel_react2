@@ -15,7 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <AppContext.Provider value={{}}>
+    <AppContext.Provider value={{counter}}>
       <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
