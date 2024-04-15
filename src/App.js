@@ -5,6 +5,7 @@ import Gallery from './pages/Gallery';
 import Header from './comp/Header';
 import Vip from './pages/Vip';
 import VipInfo from './pages/VipInfo';
+import Counter from './pages/Counter';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/vip' element={<Vip/>}/>
         <Route path='/vip/:rank' element={<VipInfo/>}/>
+        <Route path='/counter' element={<Counter/>}/>
       </Routes>
     </BrowserRouter>
   );
