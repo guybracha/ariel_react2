@@ -13,6 +13,7 @@ export default function Header1() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/vip">Vip</Link></li>
+              <li><Link to="/counter">Counter</Link></li>
             </ul>
           </nav>
         </div>
