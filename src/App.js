@@ -8,12 +8,14 @@ import VipInfo from './pages/VipInfo';
 import Counter from './pages/Counter';
 import { AppContext } from './context/Context';
 import { useState } from 'react';
+import ShopPage from './pages/ShopPage';
 
 function App() {
-  const [counter, setCounter] = useState(77);
+  const [counter, setCounter] = useState(44);
 
 
   return (
+    <AppContext.Provider value={{counter, setCounter}}>
     <BrowserRouter>
     <AppContext.Provider value={{counter}}>
       <Header/>
@@ -23,9 +25,11 @@ function App() {
           <Route path='/vip' element={<Vip/>}/>
           <Route path='/vip/:rank' element={<VipInfo/>}/>
           <Route path='/counter' element={<Counter/>}/>
+          <Route path='/shop' element={<ShopPage/>}/>
         </Routes>
       </AppContext.Provider>
     </BrowserRouter>
+    </AppContext.Provider>
   );
 }
 
