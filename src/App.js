@@ -9,6 +9,8 @@ import Counter from './pages/Counter';
 import { AppContext } from './context/Context';
 import { useState } from 'react';
 import ShopPage from './pages/ShopPage';
+import Map1 from './comp/Map1';
+import Charts from './comp/Charts';
 
 function App() {
   const [counter, setCounter] = useState(44);
@@ -26,6 +28,8 @@ function App() {
           <Route path='/vip/:rank' element={<VipInfo/>}/>
           <Route path='/counter' element={<Counter/>}/>
           <Route path='/shop' element={<ShopPage/>}/>
+          <Route path='/map' element={<Map1/>}/>
+          <Route path='/charts' element={<Charts/>}/>
         </Routes>
       </AppContext.Provider>
     </BrowserRouter>

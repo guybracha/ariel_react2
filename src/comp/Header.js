@@ -14,6 +14,8 @@ export default function Header1() {
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/vip">Vip</Link></li>
               <li><Link to="/counter">Counter</Link></li>
+              <li><Link to="/map">Map</Link></li>
+              <li><Link to="/charts">Charts</Link></li>
             </ul>
           </nav>
         </div>
